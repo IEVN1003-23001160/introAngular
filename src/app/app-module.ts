@@ -9,5 +9,6 @@ import { HeroesList } from './heroes/heroes-list/heroes-list';
   imports: [BrowserModule, AppRoutingModule],
   providers: [provideBrowserGlobalErrorListeners()],
   bootstrap: [App],
+  
 })
 export class AppModule {}
