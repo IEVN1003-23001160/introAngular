@@ -13,10 +13,6 @@ export class Figuras {
   resultado: number = 0;
   operacion: string = '';
 
-  cuadrado(): void {
-    this.resultado = parseFloat(this.num1) * parseFloat(this.num1);
-  }
-
   rectangulo(): void {
     this.resultado = parseFloat(this.num1) * parseFloat(this.num2);
   }
@@ -27,6 +23,10 @@ export class Figuras {
 
   pentagono(): void {
     this.resultado = (5 * parseFloat(this.num1) * parseFloat(this.num2)) / 2;
+  }
+
+  cuadrado(): void {
+    this.resultado = parseFloat(this.num1) * parseFloat(this.num1);
   }
 
   triangulo(): void {
