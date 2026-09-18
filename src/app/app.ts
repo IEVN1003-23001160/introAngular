@@ -4,18 +4,21 @@ import { Component, signal } from '@angular/core';
   selector: 'app-root',
   standalone: false,
   styleUrl: './app.css',
-  templateUrl: './app.html',
+  templateUrl: './app.html'
 })
 export class App {
- title:string ='Luis Leonardo Guajardo'
+  
+  title:string = 'Hernandez Garcia Jesus Emmanuel'
 
-duplicarnumero(a:number):number{
-  return a*2
-}
 
-pelicula={
-  titulo: 'spider-Man',
-  fechaLanzamiento: new Date(),
-  precio: 2500
-}
+  duplicarnumero(a:number):number{
+    return a*2;
+  }
+
+  pelicula={
+    titulo: 'Spiderman',
+    fechaLanzamiento: new Date(),
+    precio: 2353
+  }
+
 }
