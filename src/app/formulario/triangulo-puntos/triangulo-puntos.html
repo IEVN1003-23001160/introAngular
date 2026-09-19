@@ -1,0 +1,107 @@
+<div class="col-6">
+    <div class="mb-3">
+
+        <form action="">
+
+            <h3>Puntos del triángulo</h3>
+
+            <h5>Punto A</h5>
+
+            <div class="form-group pt-2">
+                <label for="x1">X:</label>
+
+                <input [(ngModel)]="x1"
+                    type="number"
+                    name="x1"
+                    class="form-control"
+                    id="x1"
+                    placeholder="Ingresa X">
+            </div>
+
+            <div class="form-group pt-2">
+                <label for="y1">Y:</label>
+
+                <input [(ngModel)]="y1"
+                    type="number"
+                    name="y1"
+                    class="form-control"
+                    id="y1"
+                    placeholder="Ingresa Y">
+            </div>
+
+
+            <h5 class="pt-3">Punto B</h5>
+
+            <div class="form-group pt-2">
+                <label for="x2">X:</label>
+
+                <input [(ngModel)]="x2"
+                    type="number"
+                    name="x2"
+                    class="form-control"
+                    id="x2"
+                    placeholder="Ingresa X">
+            </div>
+
+            <div class="form-group pt-2">
+                <label for="y2">Y:</label>
+
+                <input [(ngModel)]="y2"
+                    type="number"
+                    name="y2"
+                    class="form-control"
+                    id="y2"
+                    placeholder="Ingresa Y">
+            </div>
+
+
+            <h5 class="pt-3">Punto C</h5>
+
+            <div class="form-group pt-2">
+                <label for="x3">X:</label>
+
+                <input [(ngModel)]="x3"
+                    type="number"
+                    name="x3"
+                    class="form-control"
+                    id="x3"
+                    placeholder="Ingresa X">
+            </div>
+
+            <div class="form-group pt-2">
+                <label for="y3">Y:</label>
+
+                <input [(ngModel)]="y3"
+                    type="number"
+                    name="y3"
+                    class="form-control"
+                    id="y3"
+                    placeholder="Ingresa Y">
+            </div>
+
+            <br>
+
+            <button (click)="analizar()"
+                type="button"
+                class="btn btn-primary">
+                Analizar puntos
+            </button>
+
+            <br><br>
+
+            <h4>Resultado</h4>
+
+            <p>Punto A: ({{ x1 }}, {{ y1 }})</p>
+
+            <p>Punto B: ({{ x2 }}, {{ y2 }})</p>
+
+            <p>Punto C: ({{ x3 }}, {{ y3 }})</p>
+
+            <h4>{{ resultado }}</h4>
+
+            <h4>Área: {{ area }} unidades cuadradas</h4>
+
+        </form>
+
+    </div>
+</div>

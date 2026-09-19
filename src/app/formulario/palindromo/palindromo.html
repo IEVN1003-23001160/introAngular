@@ -1,0 +1,22 @@
+<div class="col-6">
+    <div class="mb-3">
+        <form action="">
+
+            <div class="form-group pt-4">
+                <label for="frase">Ingresa una frase:</label>
+                <input [(ngModel)]="frase" type="text" name="frase" class="form-control" id="frase"
+                    placeholder="Ingresa una frase">
+            </div>
+
+            <br>
+            <button (click)="analizar()" type="button" class="btn btn-primary">
+                Analizar
+            </button>
+
+            <br><br>
+            <h4>Número de vocales: {{ vocales }}</h4>
+            <h4>Número de consonantes: {{ consonantes }}</h4>
+            <h4>Palíndromo: {{ resultado }}</h4>
+        </form>
+    </div>
+</div>
